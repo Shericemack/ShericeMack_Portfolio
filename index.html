@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Sherice Mack MA Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+  <style>
+    .container {
+      /* position: absolute; */
+      height: 300px;
+      width: 800px;
+      top: 15%;
+      left: calc(45% - 300px);
+      display: flex;
+  }
+  .card {
+      display: flex;
+      height: 65%;
+      width: 80%;
+      background-color: #e4662cf3 !important;
+      border-radius: 10px;
+      box-shadow: -1rem 0 5rem rgba(63, 22, 3, 0.856);
+      /* margin-left: -50px; */
+      transition: 0.4s ease-out;
+      position: relative;
+      left: 0px;
+      color:#f1f1f1;
+  }
+  #contactMe {
+    display: flex;
+      height: 45%;
+      width: 55%;
+      background-color: #e4662cf3 !important;
+      border-radius: 10px;
+      box-shadow: -1rem 0 5rem rgba(63, 22, 3, 0.856);
+      /* margin-left: -50px; */
+      transition: 0.4s ease-out;
+      position: relative;
+      left: 5px;
+      color:#cbb9f0;
+  }
+    
+  .card:not(:first-child) {
+        margin-left: -50px;
+  }
+    
+  .card:hover {
+      transform: translateY(-60px);
+      transition: 0.4s ease-out;
+      color: #ffffff;
+  }
+    
+  .card:hover ~ .card {
+      position: relative;
+      left: 10%;
+      transition: 0.4s ease-out;
+  }
+    
+  .title {
+      color: white;
+      font-weight: 300;
+      position: absolute;
+      left: 20px;
+      top: 15px;
+  }
+    
+  .bar {
+      position: absolute;
+      top: 100px;
+      left: 10px;
+      height: 5px;
+      width: 120px;
+  }
+    
+  .emptybar {
+      background-color: #2e3033;
+      width: 100%;
+      height: 100%;
+  }
+    
+  .filledbar {
+      position: absolute;
+      top: 0px;
+      z-index: 3;
+      width: 0px;
+      height: 100%;
+      background: rgb(0,154,217);
+      background: linear-gradient(90deg, rgb(45, 40, 46) 0%,rgb(247, 247, 247) 50%,rgb(45, 40, 46) 100%);
+      transition: 0.6s ease-out;
+  }
+    
+  .card:hover .filledbar {
+      width: 120px;
+      transition: 0.4s ease-out;
+  }
+  
+  .stroke {
+      stroke: white;
+      stroke-dasharray: 360;
+      stroke-dashoffset: 360;
+      transition: 0.6s ease-out;
+  }
+    
+  .images {
+      fill: #17141d;
+      stroke-width: 2px;
+  }
+    
+  .card:hover .stroke {
+      stroke-dashoffset: 100;
+      transition: 0.6s ease-out;
+  }
+  form {
+    padding: 20px;
+  }
+  #btn{
+    background-color: #e4662cf3 !important;
+    color: white;
+    border: 2px solid #17141d;
+  }
+  #btn:hover{
+    background-color: #d8825af3 !important;
+    border: 2px solid  #d8825af3 !important;
+  }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Sherice Mack</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/download.jpeg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Sherice
+          <span class="text-primary">Mack</span>
+        </h1>
+        <div class="subheading mb-5"> · Chicago, IL 60612 · (859) 361-7022 ·
+          <a href="mailto:name@email.com">Sherice.Mack@gmail.com</a>
+        </div>
+        <p class="lead mb-5">I am a certified Front End Developer and a canidate for Fullstak Developer Certification.
+          I am well versed in HTML, CSS, and Javascript as I am currently a TA for Pesevere Code Camp.
+          I am always intersted in learning and creating new content. I enjoy creating a designing projects that are visually pleaing
+          as well as fully functional on the back end. As in my porjects below you will find my experience with React, Express, and Mongo.</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sherice-mack-m-a-581245b8"  target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Shericemack"  target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Teacher's Assitant</h3>
+            <div class="subheading mb-3">Pesevere</div>
+
+           <p>Preserve Code camp primary goal was to teach inmates how to code, which offered inmates the autonomy and 
+            ability to provide for their families while incarcerated.  Chicago's Perserve Code camp was a first of its 
+            kind pilot program offered to the community of Chicago instead of incarcerated individuals. While pursing my
+            coding certifications I worked closely with the instructor as well as the students. I designed coursework for 
+            the students for their front end development track, fostered a team environment by designing collaborative 
+            projects for the students, and was available for in class and skype tutoring for both front end and full stack development tracks.  
+          </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2020 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> Freelance Web Developer</h3>
+            <div class="subheading mb-3">Self Employed</div>
+            <p>I have worked on front end and full stack projects for indiviudals and companies through freelance work. These websites include real estate,
+              and retail businesses. </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2019 - Present</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+          <div class="resume-content">
+            <h3 class="mb-0"> Pesevere Code Camp</h3>
+            <div class="subheading mb-3">Front End Developer Certification</div>
+            <div>Completed</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2019 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+          <div class="resume-content">
+            <h3 class="mb-0"> Free Code Camp</h3>
+            <div class="subheading mb-3">Full Stack Developer Certification</div>
+            <div>Web Development Track</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2019 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+          <div class="resume-content">
+            <h3 class="mb-0"> Adler University</h3>
+            <div class="subheading mb-3">Masters in Counseling Psychology</div>
+            <div>Certification in Positive Discipline - Certification in Addictions and Substance Abuse</div>
+            <p>GPA: 3.9</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2006 - May 2010</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Georgetown College</h3>
+            <div class="subheading mb-3">Bachelors of Arts in Psychology</div>
+            <p>GPA: 3.2</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2010 - May 2013</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+        </ul>
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Debugging</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Team Collaboration Projects</li>
+          <!-- <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li> -->
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Portfolio</h2>
+        <p></p>
+        <p class="mb-0"></p>
+        <div class="container">
+          <div class="card">
+            <!-- <h3 class="title">Music Junkie</h3> -->
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+              <img src="img/Untitled.png" width="100%" height="125">
+            </div>
+            <div class="textbox">
+                <p>API calls </p>
+                <p>Artist Junkie</p>
+             
+            </div>
+          </div>
+          <div class="card"><a href="https://shericemack.github.io/Trivia-Game/" target="_blank">
+            <!-- <h3 class="title">Triva</h3> -->
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+              <img src="img/kobe.jpg" width="100%" height="125">
+            </div>
+            <div class="textbox">
+                <p style="color:white;">Trivia</p>
+                <p style="color:white;">Javascript</p>
+            </div>
+          </div></a>
+          <div class="card"><a href=" https://shericemack.github.io/hangManGame/" target="_blank">            <!-- <h3 class="title">Hangman</h3> -->
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+              <img src="img/bg.jpg" width="100%" height="125">
+            </div>
+            <div class="textbox">
+                <p style="color:white;">Vanilla JavaScript</p>
+                <p style="color:white;">Hangman</p>
+            </div>
+          </div>
+        </a>
+          <div class="card"><a href=" https://shericemack.github.io/CrystalCollector/" target="_blank">
+            <!-- <h3 class="title">Crystal Collector</h3> -->
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+              <img src="img/crystal.jpeg" width="100%" height="125">
+            </div>
+            <div class="textbox">
+                <p style="color:white;">JQuery</p>
+                <p style="color:white;">Guessing Game</p>
+            </div>
+          </div></a>
+          <div class="card"><a href="https://floating-earth-29054.herokuapp.com/" target="_blank">
+            <!-- <h3 class="title">Google Books</h3> -->
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+              <img src="img/books.jpg" width="100%" height="125">
+            </div>
+            <div class="textbox">
+                <p style="color:white;">React</p>
+                <p style="color:white;">Book Search</p>
+            </div>
+          </div></a>
+          <div class="card"><a href="https://shericemack.github.io/shoeStore/" target="_blank">
+            <!-- <h3 class="title">Shoe Store</h3> -->
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+             <img src="img/blue.jpg" width="100%" height="125">
+            </div>
+            <div class="textbox">
+                <p style="color:white;">HTML/ CSS</p>
+                <p style="color:white;">template for store</p>
+            </div>
+          </div></a>
+          <!-- <div class="card">
+             <h3 class="title">Shoe Store 
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+              <img src="" width="140" height ="125">
+            </div>
+            <div class="textbox">
+                <p></p>
+                <p></p>
+            </div>
+          </div> -->
+          <div class="card"> <a href="https://shericemack.github.io/Bird-crossing/" target="_blank">
+            <!-- <h3 class="title">Bird Crossing</h3> -->
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="images">
+              <img src="img/bird.png" width="100%" height ="125">
+            </div>
+            <div class="textbox">
+                <p style="color:white;">JavaScript</p>
+                <p style="color:white;">Kid's Game</p>
+            </div>
+          </div></a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Contact Me</h2>
+        <!-- <div class ="container">
+          <div class ="card" id="contactCard">
+            <div class ="textbox">
+              <strong>Email:</strong> Sherice.Mack@gmail.com<br>
+              <strong>Phone:</strong> (859)361-7022
+            </div>
+          </div>
+        </div> -->
+
+<form>
+  <div class="form-group">
+    <label for="email">Subject</label>
+    <input
+      type="text"
+      class="form-control"
+      id="subject"
+      placeholder="Subject"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Message</label>
+    <textarea
+      class="form-control"
+      id="message"
+      rows="3"
+      placeholder="Write your email here...."
+    ></textarea>
+  </div>
+  <button type="submit" class="btn" id="btn">Submit</button>
+</form>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+
+  
+ 
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"
+></script>
+<script>
+  $(".btn").on("click", function (event) {
+
+// Initialize email content variables
+    const subject = $("#subject").val();
+    const message = $("#message").val();
+
+// Prevent Page Change
+    event.preventDefault();
+
+// Log values
+    console.log(message);
+
+// Clear Input Fields
+    $("#subject").val("");
+    $("#message").val("");
+
+// Open Email client and fill in the proper inputs
+    window.open(`mailto:Sherice.mack@gmail.com?subject=${subject}&body=${message}`);
+  });
+</script>
+</body>
+
+</html>
